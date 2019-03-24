@@ -93,3 +93,10 @@ schema {
   mutation: Mutation
 }
 ```
+
+Libraries
+----
+
+djangoのGrhaphqlライブラリgraphene_djangoを使う（2.2.0だった）。
+
+`pip install -r requirements/all.txt`

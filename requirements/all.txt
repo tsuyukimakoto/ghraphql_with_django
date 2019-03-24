@@ -1,0 +1,3 @@
+# https://pip.readthedocs.io/en/stable/reference/pip_install/#example-requirements-file
+-r base.txt
+-r django.txt
