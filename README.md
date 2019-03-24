@@ -105,3 +105,17 @@ Model and Queries
 ----
 
 movies.schema.Queryの各メソッドは `resolvers` と呼ばれる。
+
+run
+----
+
+```
+$ git clone git@github.com:tsuyukimakoto/ghraphql_with_django.git
+$ cd ghraphql_with_django
+$ pip install -r requirements/all.txt
+$ cd src
+$ python manage.py migrate
+$ python manage.py runserver
+```
+
+http://localhost:8000/graphql/
