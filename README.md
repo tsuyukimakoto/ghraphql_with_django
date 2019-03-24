@@ -34,3 +34,51 @@ type Query {
   movies: [Movie]
 }
 ```
+
+Mutations
+----
+
+- データの変更定義
+
+- input: mutationのための特殊な型。個別のフィールドではなくてオブジェクト全体を渡したい場合に使う
+- Payloads: 標準の型。mutationの出力として。
+
+```
+input ActorInput {  
+  id: ID
+  name: String!
+}
+
+input MovieInput {  
+  id: ID
+  title: String
+  actors: [ActorInput]
+  year: Int
+}
+```
+
+```
+type ActorPayload {  
+  ok: Boolean
+  actor: Actor
+}
+
+type MoviePayload {  
+  ok: Boolean
+  movie: Movie
+}
+```
+
+- ok: payloadによく組み込まれるmetadata
+
+Mutationの定義は
+
+```
+type Mutation {  
+  createActor(input: ActorInput) : ActorPayload
+  createMovie(input: MovieInput) : MoviePayload
+  updateActor(id: ID!, input: ActorInput) : ActorPayload
+  updateMovie(id: ID!, input: MovieInput) : MoviePayload
+}
+```
+
