@@ -100,3 +100,8 @@ Libraries
 djangoのGrhaphqlライブラリgraphene_djangoを使う（2.2.0だった）。
 
 `pip install -r requirements/all.txt`
+
+Model and Queries
+----
+
+movies.schema.Queryの各メソッドは `resolvers` と呼ばれる。
