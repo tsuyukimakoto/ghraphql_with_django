@@ -146,3 +146,6 @@ class Mutation(graphene.ObjectType):
     update_actor = UpdateActor.Field()
     create_movie = CreateMovie.Field()
     update_movie = UpdateMovie.Field()
+
+
+schema = graphene.Schema(query=Query, mutation=Mutation)
