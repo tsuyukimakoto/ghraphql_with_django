@@ -82,3 +82,14 @@ type Mutation {
 }
 ```
 
+Schema
+----
+
+QueryとMutationを合わせてSchemaを定義する。
+
+```
+schema {  
+  query: Query
+  mutation: Mutation
+}
+```
