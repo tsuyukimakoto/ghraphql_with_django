@@ -3,6 +3,7 @@ Types
 
 - ID: ユニークな識別子（Stringとしてシリアライズされる
 - エクスクラメーションマーク: 必須
+- listは[]（square brackets）でくくる
 
 ```
 type <型名> {
