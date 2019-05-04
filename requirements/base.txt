@@ -1,2 +1,2 @@
 # python basic libraries
-pip==19.0.3
+pip==19.1
