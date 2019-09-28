@@ -1,2 +1,2 @@
 django==2.2.5
-graphene-django==2.5.0
+graphene-django==2.6.0
